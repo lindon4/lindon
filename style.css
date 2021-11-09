@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+
+/* header */
+
+header {
+    /* border: black solid 2px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
+    height: 10vh;
+}
+
+.logo {
+    /* border: solid 2px green; */
+    display: inline-flex;
+    text-align: center;
+}
+
+nav {
+    /* border: hotpink solid 2px; */
+    align-self: center;
+}
+
+nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 1.5rem;
+}
+
+header a:link {
+    text-decoration: none;
+    color: black;
+}
+
+header a:visited {
+    color: black;
+}
+
+
+/* intro */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    /* border: green solid 2px; */
+    height: 90vh;
+    margin: 0 10rem;
+}
+
+.intro {
+    border: black solid 3px;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5em;
+}
