@@ -72,3 +72,51 @@ header a:visited {
     align-items: center;
     padding: 0px 5em;
 }
+
+
+/* projects */
+
+.projects img {
+    width: 500px;
+    margin: 5rem 0;
+}
+
+.project-1 p {
+    width: 400px;
+    margin-left: 5rem;
+    border-bottom: black solid 2px;
+}
+
+.project-1 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.project-2 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.project-2 p {
+    order: -1;
+    width: 400px;
+    margin-right: 5rem;
+    border-bottom: black solid 2px;
+}
+
+.project-3 {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.project-3 p {
+    width: 400px;
+    margin-left: 5rem;
+    border-bottom: black solid 2px;
+}
