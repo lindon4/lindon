@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -14,6 +16,14 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    font-family: 'Amatic SC', cursive;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 
 /* header */
 
@@ -22,8 +32,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 10rem;
-    height: 10vh;
+    margin: 0 10rem 2rem;
+    height: 5vh;
 }
 
 .logo {
@@ -35,6 +45,7 @@ header {
 nav {
     /* border: hotpink solid 2px; */
     align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 nav li {
@@ -71,6 +82,7 @@ header a:visited {
     justify-content: center;
     align-items: center;
     padding: 0px 5em;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -84,6 +96,7 @@ header a:visited {
 .project-1 p {
     width: 400px;
     margin-left: 5rem;
+    padding-bottom: 2em;
     border-bottom: black solid 2px;
 }
 
@@ -92,6 +105,7 @@ header a:visited {
     justify-content: space-between;
     align-items: center;
     margin-left: 10rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 .project-2 {
@@ -99,12 +113,14 @@ header a:visited {
     justify-content: space-between;
     align-items: center;
     margin-left: 10rem;
+    font-family: 'Oswald', sans-serif;
 }
 
 .project-2 p {
     order: -1;
     width: 400px;
     margin-right: 5rem;
+    padding-bottom: 2em;
     border-bottom: black solid 2px;
 }
 
@@ -119,4 +135,5 @@ header a:visited {
     width: 400px;
     margin-left: 5rem;
     border-bottom: black solid 2px;
+    padding-bottom: 2em;
 }
