@@ -156,11 +156,20 @@ header a:visited {
     animation: flicker-in-1 2s linear both;
 }
 
-@media only screen and (max-width: 608px) {
+@media only screen and (max-width: 394px) {
+    body {
+        background-color: blueviolet;
+    }
+    header {
+        border: cadetblue solid 2px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
     html {
         font-size: 100%;
         line-height: 1.3;
-        overflow-x: none;
+        /* overflow-x: none; */
     }
     h1,
     p {
@@ -168,16 +177,21 @@ header a:visited {
     }
     header {
         border: springgreen solid 2px;
+        width: 100vw;
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
+        margin: 0;
     }
     .hero {
         border: steelblue solid 2px;
         margin: 0 auto;
+        width: 100vw;
     }
     .projects {
         border: tan solid 2px;
+        width: 100vw;
+        margin: 0 auto;
         /* display: inline-flex; */
         /* justify-content: center; */
         /* flex-direction: column; */
@@ -202,5 +216,16 @@ header a:visited {
     }
     .project-1 {
         height: 60vh;
+    }
+}
+
+@media only screen and (min-width: 38em) {
+    html {
+        font-size: 110%;
+        line-height: 1.4;
+    }
+    h1,
+    p {
+        margin: 0 0 1.4rem;
     }
 }
