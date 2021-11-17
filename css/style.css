@@ -156,7 +156,7 @@ header a:visited {
     animation: flicker-in-1 2s linear both;
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 608px) {
     html {
         font-size: 100%;
         line-height: 1.3;
