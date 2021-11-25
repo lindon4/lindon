@@ -25,3 +25,36 @@ function myFunction() {
         x.className = "nav";
     }
 }
+
+
+
+// modal
+
+const openShowModal = document.querySelector(".show-modal")
+const bntCloseModal = document.querySelector(".close-modal")
+const modal = document.querySelector(".modal")
+const overlay = document.querySelector(".overlay")
+const main = document.querySelector(".main")
+
+const showModal = function() {
+    modal.classList.remove("hidden")
+    overlay.classList.remove("hidden")
+    main.classList.add("hidden")
+}
+
+const closeModal = function() {
+    modal.classList.add("hidden")
+    overlay.classList.add("hidden")
+    main.classList.remove("hidden")
+
+}
+
+openShowModal.addEventListener("click", showModal)
+
+bntCloseModal.addEventListener("click", closeModal)
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeModal()
+    }
+})
