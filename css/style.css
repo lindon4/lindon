@@ -376,6 +376,13 @@ textarea {
     transition: 0.4s;
 }
 
+.card a {
+    display: inherit;
+    width: inherit;
+    height: inherit;
+    margin: inherit;
+}
+
 .card .card_image {
     width: inherit;
     height: inherit;
