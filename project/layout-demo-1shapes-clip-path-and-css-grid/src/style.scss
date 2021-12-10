@@ -1,0 +1,127 @@
+.grid {
+	display: grid;
+	margin: 2rem;
+	grid-template-columns: 100%;
+
+	@media screen and (min-width: 1000px) {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+.feature-letter {
+	font-family: "Work Sans", sans-serif;
+	line-height: 1;
+	font-weight: 900;
+
+	font-size: calc(
+		100px + (550 - 100) * ((100vw - 320px) / (1000 - 320))
+	); //550px;
+	margin: 0;
+	background-image: url(https://images.unsplash.com/photo-1543871673-fb355dc4e349?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+	background-size: cover;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	float: left;
+	shape-margin: 0.5rem;
+	shape-outside: polygon(
+		6.13% 18.73%,
+		5.97% 84.82%,
+		39.05% 84.64%,
+		43.15% 60.82%,
+		66.73% 83.73%,
+		101.49% 83.64%,
+		79.49% 59.81%,
+		89.11% 54.91%,
+		94.27% 48.09%,
+		96.59% 36.55%,
+		91.11% 25%,
+		74.52% 19.27%
+	);
+}
+
+.feature-intro {
+	font-family: "Playfair Display", serif;
+	font-size: 0.65rem;
+	letter-spacing: 0.052rem;
+
+	&.start {
+		margin-top: 1rem;
+		line-height: 1.4;
+
+		&::first-letter {
+			font-size: 28px;
+			border-left: 1px solid black;
+			border-bottom: 1px solid black;
+			padding: 0 0 0 5px;
+		}
+	}
+}
+
+.nestedGrid {
+	font-family: "Playfair Display", serif;
+	font-size: 0.65rem;
+	letter-spacing: 0.052rem;
+	margin: 1rem;
+	grid-gap: 1.25rem;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"text1"
+		"text2"
+		"text3";
+
+	@media screen and (min-width: 400px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			"text1 text2"
+			"text1 text2"
+			"text3 text3";
+	}
+
+	@media screen and (min-width: 1000px) {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas:
+			"text1 text2 text3"
+			"text1 text2 ."
+			". . .";
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.image1 {
+	grid-area: image1;
+}
+
+.image2 {
+	grid-area: image2;
+}
+
+.text1 {
+	grid-area: text1;
+	align-items: start;
+}
+
+.text2 {
+	grid-area: text2;
+}
+
+.text3 {
+	grid-area: text3;
+}
+
+// Text
+h2 {
+	margin: 0 0 0.25rem 0;
+	font-size: 1rem;
+	font-style: italic;
+	transform: translateX(-0.5rem);
+}
+
+p + img,
+img + h2 {
+	margin-top: 0.5rem;
+}
